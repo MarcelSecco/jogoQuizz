@@ -1,0 +1,28 @@
+.config{
+   margin-left: 25%;
+}
+.body{
+    max-width: 60vh;
+}
+.grande{
+    font-size: 5em;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 0px;
+    grid-template-areas:
+      ". . . ."
+      ". a a ."
+      "undo a a next"
+      ". a a ."
+      ". . . .";
+  }
+  
+  .a { grid-area: a; }
+  
+  .next { grid-area: next; }
+  
+  .undo { grid-area: undo; }
+  
